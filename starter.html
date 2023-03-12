@@ -52,7 +52,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             switchTheme.innerHTML = os_default
             html.setAttribute('data-theme', 'auto')
-            switchTheme.setAttribute('data-tooltip', 'os theme')
+            switchTheme.setAttribute('data-tooltip', 'auto theme')
             switchTheme.focus()
             removeTooltip(3000)
         })
@@ -61,7 +61,7 @@
             isLight = !isLight
             html.setAttribute('data-theme', isLight ? 'light' : 'dark')
             switchTheme.innerHTML = isLight ? sun : moon
-            switchTheme.setAttribute('data-tooltip', `theme ${isLight ? 'light' : 'dark'}`)
+            switchTheme.setAttribute('data-tooltip', `${isLight ? 'light' : 'dark'} mode`)
             removeTooltip()
         })
         const removeTooltip = (timeInt = 1750) => {

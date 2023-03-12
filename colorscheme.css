@@ -1,34 +1,36 @@
-/* Red Light scheme (Default) */
+/* Change colors Here: https://picocss.com/docs/customization.html and update the code below */
+
+/* Indigo Light scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-    --primary: #e53935;
-    --primary-hover: #d32f2f;
-    --primary-focus: rgba(229, 57, 53, 0.125);
+    --primary: #3949ab;
+    --primary-hover: #303f9f;
+    --primary-focus: rgba(57, 73, 171, 0.125);
     --primary-inverse: #FFF;
 }
 
-/* Red Dark scheme (Auto) */
+/* Indigo Dark scheme (Auto) */
 /* Automatically enabled if user has Dark mode enabled */
 @media only screen and (prefers-color-scheme: dark) {
     :root:not([data-theme]) {
-        --primary: #e53935;
-        --primary-hover: #f44336;
-        --primary-focus: rgba(229, 57, 53, 0.25);
+        --primary: #3949ab;
+        --primary-hover: #3f51b5;
+        --primary-focus: rgba(57, 73, 171, 0.25);
         --primary-inverse: #FFF;
     }
 }
 
-/* Red Dark scheme (Forced) */
+/* Indigo Dark scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
 [data-theme="dark"] {
-    --primary: #e53935;
-    --primary-hover: #f44336;
-    --primary-focus: rgba(229, 57, 53, 0.25);
+    --primary: #3949ab;
+    --primary-hover: #3f51b5;
+    --primary-focus: rgba(57, 73, 171, 0.25);
     --primary-inverse: #FFF;
 }
 
-/* Red (Common styles) */
+/* Indigo (Common styles) */
 :root {
     --form-element-active-border-color: var(--primary);
     --form-element-focus-color: var(--primary-focus);
